@@ -143,11 +143,11 @@ export default function Home() {
                 <div className="p-4">
                   <h3 className="text-xl font-bold">Lost Saga Private Server</h3>
                   <p className="text-m text-justify">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla, 
-                  urna eget tincidunt venenatis, purus elit hendrerit dui, et gravida orci arcu vel ligula. 
-                  Donec auctor nisl vel diam tincidunt, a aliquet nulla fermentum. 
-                  Proin condimentum felis vitae est varius, sed iaculis lorem lacinia. 
-                  Mauris posuere quam eu orci mollis, ac viverra purus maximus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla,
+                    urna eget tincidunt venenatis, purus elit hendrerit dui, et gravida orci arcu vel ligula.
+                    Donec auctor nisl vel diam tincidunt, a aliquet nulla fermentum.
+                    Proin condimentum felis vitae est varius, sed iaculis lorem lacinia.
+                    Mauris posuere quam eu orci mollis, ac viverra purus maximus.
                   </p>
                 </div>
               </div>
@@ -163,11 +163,11 @@ export default function Home() {
                 <div className="p-4">
                   <h3 className="text-xl font-bold">Lost Saga Database</h3>
                   <p className="text-m text-justify">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla, 
-                  urna eget tincidunt venenatis, purus elit hendrerit dui, et gravida orci arcu vel ligula. 
-                  Donec auctor nisl vel diam tincidunt, a aliquet nulla fermentum. 
-                  Proin condimentum felis vitae est varius, sed iaculis lorem lacinia. 
-                  Mauris posuere quam eu orci mollis, ac viverra purus maximus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla,
+                    urna eget tincidunt venenatis, purus elit hendrerit dui, et gravida orci arcu vel ligula.
+                    Donec auctor nisl vel diam tincidunt, a aliquet nulla fermentum.
+                    Proin condimentum felis vitae est varius, sed iaculis lorem lacinia.
+                    Mauris posuere quam eu orci mollis, ac viverra purus maximus.
                   </p>
                 </div>
               </div>
@@ -189,6 +189,100 @@ export default function Home() {
           </div>
           <div className="absolute top-0 left-0 w-full h-32 bg-white -z-10 rounded-b-[120px]"></div>
         </section>
+
+        <footer className="bg-[#0F172A] pt-12 pb-8 w-full">
+          <div className="container mx-auto px-8">
+            <div className="flex flex-wrap justify-center md:justify-start items-start">
+              {/* Left: Name and Address */}
+              <div className="flex flex-col mb-8 md:mb-0 text-left md:w-1/2 lg:w-1/3 ml-0">
+                <Link href="/" className="inline-flex items-center mb-4 ml-0">
+                  <svg className="w-8 text-teal-accent-400" viewBox="0 0 24 24" strokeLinejoin="round" strokeWidth="2" strokeLinecap="round" strokeMiterlimit="10" stroke="#DDDDDD" fill="none">
+                    <rect x="3" y="1" width="7" height="12"></rect>
+                    <rect x="3" y="17" width="7" height="6"></rect>
+                    <rect x="14" y="1" width="7" height="6"></rect>
+                    <rect x="14" y="11" width="7" height="12"></rect>
+                  </svg>
+                  <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">Dzikri Maulana</span>
+                </Link>
+                <div className="text-white ml-0">
+                  <p className="text-sm mb-2">Komp. Pagambiran Permai Blok H-7, 25225</p>
+                  <p className="text-sm mb-2">Kel. Pagambiran Nan XX</p>
+                  <p className="text-sm mb-2">Kec. Lubuk Begalung</p>
+                  <p className="text-sm mb-2">Kota Padang</p>
+                  <p className="text-sm mb-2">Provinsi Sumatera Barat</p>
+                </div>
+              </div>
+
+
+              {/* Center: Achievements */}
+              <div className="w-full mb-8 md:w-1/2 lg:w-1/3 text-left">
+                <p className="font-semibold text-lg tracking-wide text-primary mb-4">Achievements</p>
+                <ul className="space-y-2 text-secondary">
+                  <li><Link href="#" className="transition-colors text-sm duration-300 text-white hover:text-teal-accent-400">Dicoding</Link></li>
+                </ul>
+              </div>
+
+              {/* Right: Links Text (Social Media Links) */}
+              <div className="w-full text-left md:w-1/3">
+                <p className="font-semibold text-lg tracking-wide text-primary mb-4">Follow Me</p>
+                <div className="flex flex-col space-y-2">
+                  <Link href="https://github.com/yourusername" className="text-sm text-white hover:text-teal-accent-400">GitHub</Link>
+                  <Link href="https://linkedin.com/in/yourusername" className="text-sm text-white hover:text-teal-accent-400">LinkedIn</Link>
+                  <Link href="https://facebook.com/yourusername" className="text-sm text-white hover:text-teal-accent-400">Facebook</Link>
+                  <Link href="https://instagram.com/yourusername" className="text-sm text-white hover:text-teal-accent-400">Instagram</Link>
+                  <Link href="https://discord.com/users/yourusername" className="text-sm text-white hover:text-teal-accent-400">Discord</Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Divider */}
+            <div className="border-t border-gray-600 my-4"></div>
+
+            {/* Copyright Section with Icons */}
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              {/* Copyright Text on the Left */}
+              <div className="text-sm text-gray-400 mb-4 md:mb-0">
+                <span>&copy; 2025 Dzikri Maulana. All rights reserved.</span>
+              </div>
+
+              {/* Social Media Icons on the Right */}
+              <div className="flex space-x-4">
+                <div className="w-10 h-10 rounded-lg flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                  <Link href="https://github.com/yourusername" target="_blank">
+                    <Image src="/assets/icons/brand/github.svg" alt="GitHub" width={24} height={24} />
+                  </Link>
+                </div>
+
+                <div className="w-10 h-10 mr-3 rounded-lg flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                  <Link href="https://linkedin.com/in/yourusername" target="_blank">
+                    <Image src="/assets/icons/brand/linkedin.svg" alt="LinkedIn" width={24} height={24} />
+                  </Link>
+                </div>
+
+                <div className="w-10 h-10 mr-3 rounded-lg flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                  <Link href="https://facebook.com/yourusername" target="_blank">
+                    <Image src="/assets/icons/brand/facebook.svg" alt="Facebook" width={24} height={24} />
+                  </Link>
+                </div>
+
+                <div className="w-10 h-10 mr-3 rounded-lg flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                  <Link href="https://instagram.com/yourusername" target="_blank">
+                    <Image src="/assets/icons/brand/instagram.svg" alt="Instagram" width={24} height={24} />
+                  </Link>
+                </div>
+
+                <div className="w-10 h-10 mr-3 rounded-lg flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                  <Link href="https://discord.com/users/yourusername" target="_blank">
+                    <Image src="/assets/icons/brand/discord.svg" alt="Discord" width={24} height={24} />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+
       </div>
     </div>
   );
