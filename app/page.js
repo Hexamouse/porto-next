@@ -96,7 +96,7 @@ export default function Home() {
                   <span className="text-lg text-white">Fullstack Developer</span>
                 </div>
               </h3>
-              <p className="text-lg text-justify sm:text-lg text-white mt-4 sm:text-justify">
+              <p className="text-lg text-justify text-white mt-4 sm:text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae libero ac risus egestas placerat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
               <Link href="#projects" className="btn btn-primary mt-6">See More</Link>
