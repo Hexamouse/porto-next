@@ -25,10 +25,10 @@ const HeroSection = ({ hasLoaded }) => (
           alt="My Photo"
           width={400}
           height={400}
-          className="relative z-10 max-w-full mx-auto rounded-b-[120px] grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-x-[-1] md:w-[350px] lg:w-[400px] transition-all duration-300 ease-in-out -mt-10"
+          className="relative z-10 max-w-full mx-auto rounded-b-[120px] grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-x-[-1] md:w-[250px] lg:w-[400px] transition-all duration-300 ease-in-out -mt-10"
         />
         <span className="w-full absolute bottom-0 -z-1 left-1/2 -translate-x-1/2 md:scale-125">
-          <div className="h-80 shadow-2xl shadow-white bg-gradient-to-t from-secondary to-primary rounded-full -mt-10"></div>
+          <div className="h-60 shadow-xl shadow-white bg-gradient-to-t from-secondary to-primary rounded-full -mt-10"></div>
         </span>
       </div>
     </div>
