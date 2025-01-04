@@ -25,3 +25,34 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Di dalam file globals.css atau style global yang Anda pakai */
+/* Di dalam file globals.css atau style global yang Anda pakai */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.typing-animation {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid transparent;
+  width: 0;
+  animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+.typing-animation.delay-1s {
+  animation-delay: 1s;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
