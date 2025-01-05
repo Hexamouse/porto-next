@@ -187,20 +187,6 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-
-              <div className="portfolio-item rounded-lg shadow-lg overflow-hidden">
-                <Image
-                  src="/assets/pic/portfolio3.jpg"
-                  alt="Project 3"
-                  width={100}
-                  height={100}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-xl font-bold">Project 3</h3>
-                  <p className="text-lg">Description of the project goes here.</p>
-                </div>
-              </div>
             </div>
           </div>
           <div className="absolute top-0 left-0 w-full h-32 bg-white -z-10 rounded-b-[120px]"></div>
