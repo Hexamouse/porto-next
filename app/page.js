@@ -117,13 +117,13 @@ export default function Home() {
           </div>
 
           {/* Lingkaran Hiasan di Batas Section */}
-          <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full z-0 transform translate-x-1/2 translate-y-1/2"></div>
+          {/* <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full z-0 transform translate-x-1/2 translate-y-1/2"></div> */}
         </section>
 
         {/* About Section */}
         <section id="about" className="relative py-20 bg-[#0F172A] text-white overflow-visible">
           {/* Lingkaran Hiasan di Batas Section */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full z-0 transform translate-x-1/2 -translate-y-1/2 transition-all duration-300"></div>
+          {/* <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full z-0 transform translate-x-1/2 -translate-y-1/2 transition-all duration-300"></div> */}
 
           <div className="container mx-auto px-4 sm:px-8 lg:px-20">
             <h2 className="text-4xl font-extrabold text-center mb-8 underline">ABOUT ME</h2>
