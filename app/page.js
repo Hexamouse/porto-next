@@ -36,7 +36,7 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <div className="__NEXT">
         {/* Navbar */}
-        <div className={`navbar fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? 'bg-[#0F172A] bg-opacity-60 backdrop-blur-lg border-opacity-30' : 'bg-[#0F172A]'} text-white`}>
+        <div className={`navbar fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? 'bg-[#0F172A] bg-opacity-60 rounded-br-3xl rounded-bl-3xl backdrop-blur-lg border-opacity-30' : 'bg-[#0F172A]'} text-white`}>
           <div className="container mx-auto flex justify-between items-center px-4 lg:px-20">
             <Link href="/" className="btn btn-ghost normal-case text-xl flex items-center space-x-2">
               <span className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-yellow-400">&lt;/&gt;</span>
