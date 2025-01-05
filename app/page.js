@@ -84,7 +84,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative mt-10 min-h-screen bg-[#0F172A] py-10 sm:py-10 overflow-visible">
           {/* Lingkaran Hiasan Sudut Kiri Atas */}
-          <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full z-0 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300"></div>
+          {/* <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full z-0 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300"></div> */}
 
           <div className="container sm:mt-10 mx-auto px-4 sm:px-8 lg:px-20 flex flex-col lg:flex-row items-center justify-between space-y-10 lg:space-y-0">
             <div className={`text-left max-w-2xl lg:max-w-3xl space-y-4 relative z-10 p-4 sm:p-6 lg:p-14 ${hasLoaded ? 'animate-slide-up' : ''}`}>
