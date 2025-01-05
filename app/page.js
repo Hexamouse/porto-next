@@ -83,6 +83,9 @@ export default function Home() {
 
         {/* Hero Section */}
         <section className="relative mt-10 min-h-screen bg-[#0F172A] py-10 sm:py-10 overflow-visible">
+          {/* Lingkaran Hiasan Sudut Kiri Atas */}
+          <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full z-0 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300"></div>
+
           <div className="container sm:mt-10 mx-auto px-4 sm:px-8 lg:px-20 flex flex-col lg:flex-row items-center justify-between space-y-10 lg:space-y-0">
             <div className={`text-left max-w-2xl lg:max-w-3xl space-y-4 relative z-10 p-4 sm:p-6 lg:p-14 ${hasLoaded ? 'animate-slide-up' : ''}`}>
               <h1 className="text-4xl sm:text-4xl font-bold text-white">Hello 👋</h1>
@@ -112,12 +115,18 @@ export default function Home() {
               </span>
             </div>
           </div>
+
+          {/* Lingkaran Hiasan di Batas Section */}
+          <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full z-0 transform translate-x-1/2 translate-y-1/2"></div>
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-20 bg-[#0F172A] text-white relative">
+        <section id="about" className="relative py-20 bg-[#0F172A] text-white overflow-visible">
+          {/* Lingkaran Hiasan di Batas Section */}
+          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full z-0 transform translate-x-1/2 -translate-y-1/2 transition-all duration-300"></div>
+
           <div className="container mx-auto px-4 sm:px-8 lg:px-20">
-            <h2 className="text-4xl font-extrabold text-center mb-8">ABOUT ME</h2>
+            <h2 className="text-4xl font-extrabold text-center mb-8 underline">ABOUT ME</h2>
             <p className="text-lg text-justify">
               I am a passionate Fullstack Developer with expertise in building modern web applications. With years of experience, I specialize in both front-end and back-end development, creating beautiful, scalable, and efficient software solutions. I am dedicated to continuous learning and staying up to date with the latest technologies.
             </p>
@@ -128,7 +137,7 @@ export default function Home() {
         {/* Portfolio Section */}
         <section id="portfolio" className="relative py-20 bg-white text-black">
           <div className="container mx-auto px-4 sm:px-8 lg:px-20">
-            <h2 className="text-4xl font-extrabold text-center text-black mb-8">PORTFOLIO</h2>
+            <h2 className="text-4xl font-extrabold text-center text-black mb-8 underline">PORTFOLIO</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Example Portfolio Items */}
               <div className="portfolio-item rounded-lg shadow-lg overflow-hidden">
