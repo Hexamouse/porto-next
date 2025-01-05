@@ -63,7 +63,8 @@ export default function Home() {
         {/* Modal for mobile menu */}
         {isModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white p-8 rounded-lg relative">
+            {/* Glassmorphic background */}
+            <div className="bg-[#0F172A]/30 backdrop-blur-lg p-16 rounded-lg relative text-white border border-white/30 shadow-xl">
               <button className="absolute top-4 right-4" onClick={toggleModal}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -80,6 +81,7 @@ export default function Home() {
             </div>
           </div>
         )}
+
 
         {/* Hero Section */}
         <section className="relative mt-10 min-h-screen bg-[#0F172A] py-10 sm:py-10 overflow-visible">
@@ -125,9 +127,9 @@ export default function Home() {
           {/* Lingkaran Hiasan di Batas Section */}
           {/* <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full z-0 transform translate-x-1/2 -translate-y-1/2 transition-all duration-300"></div> */}
 
-          <div className="container mx-auto px-4 sm:px-8 lg:px-20">
+          <div className="container relative mx-auto px-4 sm:px-8 lg:px-20">
             <h2 className="text-4xl font-extrabold text-center mb-8 underline">ABOUT ME</h2>
-            <p className="text-lg text-justify">
+            <p className="text-lg text-justify text-white mt-4 sm:text-justify">
               I am a passionate Fullstack Developer with expertise in building modern web applications. With years of experience, I specialize in both front-end and back-end development, creating beautiful, scalable, and efficient software solutions. I am dedicated to continuous learning and staying up to date with the latest technologies.
             </p>
           </div>
