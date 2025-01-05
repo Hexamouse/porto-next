@@ -48,7 +48,6 @@ export default function Home() {
                 <li><Link href="#about">ABOUT</Link></li>
                 <li><Link href="#portfolio">PORTFOLIO</Link></li>
                 <li><Link href="#skills">SKILLS</Link></li>
-                <li><Link href="#projects">PROJECT</Link></li>
                 <li><Link href="#contact">CONTACT</Link></li>
               </ul>
               {/* Mobile Menu Button */}
@@ -118,7 +117,7 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className="py-20 bg-[#0F172A] text-white relative">
           <div className="container mx-auto px-4 sm:px-8 lg:px-20">
-            <h2 className="text-4xl font-bold text-center mb-8">About Me</h2>
+            <h2 className="text-4xl font-extrabold text-center mb-8">ABOUT ME</h2>
             <p className="text-lg text-justify">
               I am a passionate Fullstack Developer with expertise in building modern web applications. With years of experience, I specialize in both front-end and back-end development, creating beautiful, scalable, and efficient software solutions. I am dedicated to continuous learning and staying up to date with the latest technologies.
             </p>
@@ -129,7 +128,7 @@ export default function Home() {
         {/* Portfolio Section */}
         <section id="portfolio" className="relative py-20 bg-white text-black">
           <div className="container mx-auto px-4 sm:px-8 lg:px-20">
-            <h2 className="text-4xl font-bold text-center text-black mb-8">My Portfolio</h2>
+            <h2 className="text-4xl font-extrabold text-center text-black mb-8">PORTFOLIO</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Example Portfolio Items */}
               <div className="portfolio-item rounded-lg shadow-lg overflow-hidden">
