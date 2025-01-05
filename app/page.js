@@ -22,11 +22,17 @@ export default function Home() {
       setHasLoaded(true);
     }, 300);
 
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';  // Menonaktifkan scroll
+    } else {
+      document.body.style.overflow = '';  // Mengembalikan scroll
+    }
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       clearTimeout(timer);
     };
-  }, []);
+  }, [isModalOpen]);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -62,9 +68,9 @@ export default function Home() {
 
         {/* Modal for mobile menu */}
         {isModalOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            {/* Glassmorphic background */}
-            <div className="bg-[#0F172A]/30 backdrop-blur-lg p-16 rounded-lg relative text-white border border-white/30 shadow-xl">
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 opacity-100">
+            {/* Glassmorphic background dengan animasi smooth */}
+            <div className={`bg-[#0F172A]/30 backdrop-blur-lg p-14 rounded-lg relative text-white border border-white/30 shadow-xl transform transition-all duration-500 ease-out ${isModalOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <button className="absolute top-4 right-4" onClick={toggleModal}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
