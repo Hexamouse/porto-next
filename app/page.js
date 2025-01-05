@@ -136,7 +136,11 @@ export default function Home() {
           <div className="container relative mx-auto px-4 sm:px-8 lg:px-20">
             <h2 className="text-4xl font-extrabold text-center mb-8 underline">ABOUT ME</h2>
             <p className="text-lg text-justify text-white mt-4 sm:text-justify">
-              I am a passionate Fullstack Developer with expertise in building modern web applications. With years of experience, I specialize in both front-end and back-end development, creating beautiful, scalable, and efficient software solutions. I am dedicated to continuous learning and staying up to date with the latest technologies.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla,
+                    urna eget tincidunt venenatis, purus elit hendrerit dui, et gravida orci arcu vel ligula.
+                    Donec auctor nisl vel diam tincidunt, a aliquet nulla fermentum.
+                    Proin condimentum felis vitae est varius, sed iaculis lorem lacinia.
+                    Mauris posuere quam eu orci mollis, ac viverra purus maximus.
             </p>
           </div>
           <div className="absolute bottom-0 left-0 w-full h-32 bg-[#0F172A] -z-10 rounded-t-[120px]"></div>
